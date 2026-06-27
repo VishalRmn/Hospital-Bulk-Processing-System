@@ -1,0 +1,24 @@
+{
+  "batch_id": "61974008-0b96-477d-a936-ee5b7875f12c",
+  "status": "COMPLETED",
+  "total_hospitals": 1,
+  "processed_hospitals": 1,
+  "failed_hospitals": 0,
+  "processing_time_seconds": 6.1503236293792725,
+  "batch_activated": true,
+  "activation_status": "success",
+  "started_at": "2026-06-27T18:14:32.275915",
+  "completed_at": "2026-06-27T18:14:38.426238",
+  "error_message": null,
+  "items": [
+    {
+      "row": 1,
+      "hospital_id": 55,
+      "name": "Test Hospital",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:14:32.540795"
+    }
+  ]
+}

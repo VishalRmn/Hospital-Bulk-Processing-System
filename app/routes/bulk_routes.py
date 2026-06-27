@@ -254,11 +254,13 @@ def resume_batch(batch_id):
     
     except ValidationError as e:
         logger.warning(f"Validation error resuming batch: {e.message}")
+        # Return 404 if batch not found, 400 for other validation errors
+        status_code = 404 if 'not found' in e.message.lower() else 400
         return jsonify({
-            'status': 'validation_error',
+            'status': 'validation_error' if status_code == 400 else 'error',
             'message': e.message,
             'batch_id': batch_id
-        }), 400
+        }), status_code
     
     except Exception as e:
         logger.error(f"Error resuming batch: {str(e)}")

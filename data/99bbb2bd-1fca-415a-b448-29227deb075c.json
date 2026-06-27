@@ -1,0 +1,33 @@
+{
+  "batch_id": "99bbb2bd-1fca-415a-b448-29227deb075c",
+  "status": "COMPLETED",
+  "total_hospitals": 2,
+  "processed_hospitals": 2,
+  "failed_hospitals": 0,
+  "processing_time_seconds": 6.533541440963745,
+  "batch_activated": true,
+  "activation_status": "success",
+  "started_at": "2026-06-27T18:13:14.216798",
+  "completed_at": "2026-06-27T18:13:20.750339",
+  "error_message": null,
+  "items": [
+    {
+      "row": 1,
+      "hospital_id": 5,
+      "name": "Hospital 1",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:13:14.479751"
+    },
+    {
+      "row": 2,
+      "hospital_id": 6,
+      "name": "Hospital 2",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:13:14.481752"
+    }
+  ]
+}

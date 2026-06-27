@@ -33,7 +33,7 @@ class CSVService:
         Raises:
             ValidationError: If file validation fails
         """
-        if not file:
+        if file is None:
             raise ValidationError("No file provided")
         
         if not file.filename:
