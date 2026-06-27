@@ -1,0 +1,195 @@
+{
+  "batch_id": "409c1c72-f515-468c-9482-e78176c3e6aa",
+  "status": "COMPLETED",
+  "total_hospitals": 20,
+  "processed_hospitals": 20,
+  "failed_hospitals": 0,
+  "processing_time_seconds": 6.6096131801605225,
+  "batch_activated": true,
+  "activation_status": "success",
+  "started_at": "2026-06-27T18:52:23.904160",
+  "completed_at": "2026-06-27T18:52:30.513773",
+  "error_message": null,
+  "items": [
+    {
+      "row": 1,
+      "hospital_id": 9,
+      "name": "Hospital 1",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.091674"
+    },
+    {
+      "row": 2,
+      "hospital_id": 24,
+      "name": "Hospital 2",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.093629"
+    },
+    {
+      "row": 3,
+      "hospital_id": 8,
+      "name": "Hospital 3",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.094673"
+    },
+    {
+      "row": 4,
+      "hospital_id": 22,
+      "name": "Hospital 4",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.095630"
+    },
+    {
+      "row": 5,
+      "hospital_id": 25,
+      "name": "Hospital 5",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.096626"
+    },
+    {
+      "row": 6,
+      "hospital_id": 18,
+      "name": "Hospital 6",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.096626"
+    },
+    {
+      "row": 7,
+      "hospital_id": 6,
+      "name": "Hospital 7",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.097627"
+    },
+    {
+      "row": 8,
+      "hospital_id": 7,
+      "name": "Hospital 8",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.098628"
+    },
+    {
+      "row": 9,
+      "hospital_id": 16,
+      "name": "Hospital 9",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.099629"
+    },
+    {
+      "row": 10,
+      "hospital_id": 10,
+      "name": "Hospital 10",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.099629"
+    },
+    {
+      "row": 11,
+      "hospital_id": 20,
+      "name": "Hospital 11",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.100632"
+    },
+    {
+      "row": 12,
+      "hospital_id": 12,
+      "name": "Hospital 12",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.100632"
+    },
+    {
+      "row": 13,
+      "hospital_id": 21,
+      "name": "Hospital 13",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.101627"
+    },
+    {
+      "row": 14,
+      "hospital_id": 13,
+      "name": "Hospital 14",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.102628"
+    },
+    {
+      "row": 15,
+      "hospital_id": 15,
+      "name": "Hospital 15",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.102628"
+    },
+    {
+      "row": 16,
+      "hospital_id": 14,
+      "name": "Hospital 16",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.103634"
+    },
+    {
+      "row": 17,
+      "hospital_id": 11,
+      "name": "Hospital 17",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.104628"
+    },
+    {
+      "row": 18,
+      "hospital_id": 23,
+      "name": "Hospital 18",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.105628"
+    },
+    {
+      "row": 19,
+      "hospital_id": 17,
+      "name": "Hospital 19",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.105628"
+    },
+    {
+      "row": 20,
+      "hospital_id": 19,
+      "name": "Hospital 20",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:52:24.106627"
+    }
+  ]
+}

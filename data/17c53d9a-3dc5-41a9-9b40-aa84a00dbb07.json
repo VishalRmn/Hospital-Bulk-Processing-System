@@ -1,0 +1,24 @@
+{
+  "batch_id": "17c53d9a-3dc5-41a9-9b40-aa84a00dbb07",
+  "status": "COMPLETED",
+  "total_hospitals": 1,
+  "processed_hospitals": 1,
+  "failed_hospitals": 0,
+  "processing_time_seconds": 6.012160778045654,
+  "batch_activated": true,
+  "activation_status": "success",
+  "started_at": "2026-06-27T18:57:24.940314",
+  "completed_at": "2026-06-27T18:57:30.952475",
+  "error_message": null,
+  "items": [
+    {
+      "row": 1,
+      "hospital_id": 28,
+      "name": "Bad Phone Hospital",
+      "status": "created_and_activated",
+      "attempts": 1,
+      "failure_reason": null,
+      "created_at": "2026-06-27T18:57:25.135016"
+    }
+  ]
+}
