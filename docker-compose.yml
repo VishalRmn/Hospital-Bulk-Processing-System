@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  hospital-bulk-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hospital-bulk-processor
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_ENV: development
+      HOSPITAL_API_URL: https://hospital-directory.onrender.com
+      REQUEST_TIMEOUT: 10
+      MAX_RETRIES: 3
+      MAX_BATCH_SIZE: 20
+      LOG_LEVEL: INFO
+      DATA_DIR: /app/data
+    volumes:
+      - ./app:/app/app
+      - ./data:/app/data
+      - ./run.py:/app/run.py
+    command: python run.py
+    networks:
+      - hospital-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  hospital-network:
+    driver: bridge

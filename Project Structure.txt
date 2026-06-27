@@ -1,0 +1,40 @@
+Hospital-Bulk-Processing-System/
+├── app/
+│   ├── __init__.py                    # Flask factory
+│   ├── config.py                      # Configuration (dev/test/prod)
+│   ├── models/
+│   │   ├── batch.py                   # Batch model with serialization
+│   │   ├── batch_item.py              # Individual hospital item
+│   │   └── response_models.py         # API response DTOs
+│   ├── services/
+│   │   ├── batch_processor.py         # Core orchestration logic
+│   │   ├── csv_service.py             # CSV parsing & validation
+│   │   ├── hospital_client.py         # Hospital API client (async)
+│   │   └── retry_policy.py            # Retry logic with backoff
+│   ├── repositories/
+│   │   ├── batch_repository.py        # Abstract interface
+│   │   └── in_memory_repository.py    # In-memory + disk persistence
+│   ├── routes/
+│   │   └── bulk_routes.py             # All endpoints (bulk, status, resume)
+│   └── utils/
+│       ├── constants.py               # Status constants, config values
+│       ├── exceptions.py              # Custom exception classes
+│       ├── logger.py                  # Centralized logging
+│       └── validators.py              # CSV validation functions
+├── tests/
+│   ├── conftest.py                    # Shared fixtures
+│   ├── unit/
+│   │   ├── test_csv_service.py        # CSV tests
+│   │   ├── test_retry_policy.py       # Retry logic tests
+│   │   └── test_batch_repository.py   # Storage tests
+│   └── integration/
+│       └── test_bulk_endpoint.py      # Full endpoint tests
+├── Dockerfile                          # Production container image
+├── docker-compose.yml                  # Local development setup
+├── requirements.txt                    # Python dependencies
+├── run.py                              # Development entry point
+├── wsgi.py                             # Production entry point (Gunicorn)
+├── .env                                # Local configuration
+├── .env.example                        # Configuration template
+├── README.md                           # Comprehensive documentation
+└── data/                               # Batch persistence (created at runtime)

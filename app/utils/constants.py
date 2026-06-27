@@ -1,0 +1,35 @@
+"""Application constants."""
+
+# Batch Status
+BATCH_UPLOADED = "UPLOADED"
+BATCH_VALIDATING = "VALIDATING"
+BATCH_PROCESSING = "PROCESSING"
+BATCH_COMPLETED = "COMPLETED"
+BATCH_PARTIAL_FAILURE = "PARTIAL_FAILURE"
+BATCH_FAILED = "FAILED"
+
+# Batch Item Status
+ITEM_CREATED = "created"
+ITEM_CREATED_AND_ACTIVATED = "created_and_activated"
+ITEM_CREATION_FAILED = "creation_failed"
+ITEM_ACTIVATION_FAILED = "activation_failed"
+
+# Activation Status
+ACTIVATION_PENDING = "pending"
+ACTIVATION_SUCCESS = "success"
+ACTIVATION_FAILED = "failed"
+ACTIVATION_SKIPPED = "skipped"
+
+# Retry configuration
+DEFAULT_MAX_RETRIES = 3
+DEFAULT_RETRY_DELAYS = [1, 2, 4]  # seconds
+DEFAULT_REQUEST_TIMEOUT = 10  # seconds
+
+# CSV constraints
+MAX_CSV_SIZE = 20
+CSV_REQUIRED_HEADERS = ["name", "address"]
+CSV_OPTIONAL_HEADERS = ["phone"]
+
+# API response status codes
+RETRYABLE_STATUS_CODES = {500, 502, 503, 504}
+NON_RETRYABLE_STATUS_CODES = {400, 404, 409}
