@@ -17,6 +17,23 @@ def create_app(config_class=None):
     app.config.from_object(config_class)
     
     logger.info(f"Creating Flask app with config: {config_class.__name__}")
+
+    # Register root endpoint
+    @app.route("/", methods=["GET"])
+    def index():
+        """API root endpoint."""
+        return jsonify({
+            "service": "Hospital Bulk Processing API",
+            "version": "1.0.0",
+            "status": "running",
+            "documentation": "See README.md in the GitHub repository.",
+            "endpoints": {
+                "health": "/health",
+                "bulk_upload": "/hospitals/bulk",
+                "batch_status": "/batches/<batch_id>",
+                "resume_batch": "/batches/<batch_id>/resume"
+            }
+        }), 200
     
     # Register health check endpoint
     @app.route('/health', methods=['GET'])
