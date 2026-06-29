@@ -195,7 +195,9 @@ class BatchProcessor:
         )
         
         try:
+            
             logger.debug(f"Creating hospital: row={row_number}, name={name}")
+            logger.info(f"{datetime.now().strftime('%H:%M:%S.%f')[:-3]} START {name}")
             
             response = await client.create_hospital(
                 name=name,
@@ -203,7 +205,8 @@ class BatchProcessor:
                 phone=phone,
                 batch_id=batch_id
             )
-            
+
+            logger.info(f"{datetime.now().strftime('%H:%M:%S.%f')[:-3]} END {name}")
             item.hospital_id = response.get('id')
             item.status = ITEM_CREATED_AND_ACTIVATED  # Will be updated after activation
             item.attempts = 1
