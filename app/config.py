@@ -51,7 +51,7 @@ class ProductionConfig(Config):
 
 def get_config():
     """Get configuration based on environment."""
-    env = os.getenv('FLASK_ENV', 'development')
+    env = os.getenv('APP_CONFIG', 'development')
     
     if env == 'production':
         return ProductionConfig
